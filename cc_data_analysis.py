@@ -7,7 +7,7 @@ from datetime import datetime
 
 
 #Retrive the CSV file from the local drive
-file_path = r"C:\Users\Pandas\Case Study\cc_data.csv"
+file_path = r"########## enter file path here #########################"
 
 #Error Handling if file is not found
 if not os.path.exists(file_path):
@@ -59,6 +59,7 @@ print(top_30_median_calls[['Date', 'Incoming Calls']])
 
 
 ###### This section of the script will pull the log files from the server to compare with the "CC_data" ########
+###### This is designed to pull the log file from an OpenStack and save it into a directory for easier access and Tracking ##############
 
 
 """ """ 
@@ -70,7 +71,7 @@ def posix_to_date(posix_string):
     return datetime.utcfromtimestamp(int(posix_string))
 
 # Retrieve log file by naming path where log files are located
-log_file = r"C:\Users\Pandas\Case Study\logs.csv"
+log_file = r"########## Enter log file path here from the server"
 
 # Correct path for the timestamp file
 timestamp_file = r"C:\Users\Pandas\Case Study\last_run_timestamp.txt"
