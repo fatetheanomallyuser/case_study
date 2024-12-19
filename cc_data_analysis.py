@@ -74,7 +74,7 @@ def posix_to_date(posix_string):
 log_file = r"########## Enter log file path here from the server"
 
 # Correct path for the timestamp file
-timestamp_file = r"C:\Users\Pandas\Case Study\last_run_timestamp.txt"
+timestamp_file = r"####### enter the path of where the timestamp.txt file will be.  ########"
 
 # Function to save the file if file is new with the error handling "except" argument
 def is_log_file_new(log_file, timestamp_file):
